@@ -1,0 +1,17 @@
+POST http://localhost:8000/notes HTTP/1.1
+
+{
+    "name": "note",
+    "description": "It a note"
+}
+
+GET http://localhost:8000/notes HTTP/1.1
+
+PUT http://localhost:8000/notes/1 HTTP/1.1
+
+{
+    "name": "new note",
+    "description": "It a new note"
+}
+
+DELETE http://localhost:8000/notes/1 HTTP/1.1
